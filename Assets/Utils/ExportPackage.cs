@@ -36,7 +36,7 @@ public class ExportPackage {
             Debug.Log("matched: " + item);
         }
 
-        AssetDatabase.ExportPackage(libAssetPaths.ToArray(), "tolua.unitypackage");
+        AssetDatabase.ExportPackage(libAssetPaths.ToArray(), "dist/tolua.unitypackage");
     }
     static string BuildWildPattern(string raw)
     {
