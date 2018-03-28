@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 public class ExportPackage {
 
-    [MenuItem("Lua/Export To Lua")]
+    [MenuItem("Lua/Export ToLua Unitypackage")]
     static void ExportToLua() {
         Debug.Log("Exporting tolua unitypackage");
         string[] allAssets = AssetDatabase.GetAllAssetPaths();
@@ -40,7 +40,7 @@ public class ExportPackage {
     }
     static string BuildWildPattern(string raw)
     {
-        return ".*" + raw + ".*";
+        return raw + ".*";
     }
 
     static string BuildCsPattern(string raw) {
